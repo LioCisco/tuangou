@@ -1,0 +1,440 @@
+[ 2016-12-30T10:30:34+08:00 ] 127.0.0.1 /meituan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017211s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.2938s ]
+NOTIC: [8] Undefined variable: url D:\xampp\htdocs\meituan\Index\Home\Controller\IndexController.class.php 第 49 行.
+SQL: SELECT `cname`,`cid` FROM `group_category` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.0489s ]
+SQL: SELECT `lname`,`lid` FROM `group_locality` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.5517s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.1053s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0175s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.0397s ]
+SQL: SELECT COUNT(*) AS tp_count FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid LIMIT 1   [ RunTime:0.1689s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.buy AS buy,Goods_img.big_img AS big_img,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE ( price>0 ) ORDER BY Goods.begin_time desc LIMIT 0,10   [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 11 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: soncid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 191 行.
+NOTIC: [8] Undefined variable: sonlid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.540985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.541039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.043935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.043986s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014666s ]
+
+[ 2016-12-30T10:30:35+08:00 ] 127.0.0.1 /meituan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.0997s ]
+NOTIC: [8] Undefined variable: url D:\xampp\htdocs\meituan\Index\Home\Controller\IndexController.class.php 第 49 行.
+SQL: SELECT `cname`,`cid` FROM `group_category` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.0279s ]
+SQL: SELECT `lname`,`lid` FROM `group_locality` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.0227s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.1398s ]
+SQL: SELECT COUNT(*) AS tp_count FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.buy AS buy,Goods_img.big_img AS big_img,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE ( price>0 ) ORDER BY Goods.begin_time desc LIMIT 0,10   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 11 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: soncid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 191 行.
+NOTIC: [8] Undefined variable: sonlid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-12-30T10:30:41+08:00 ] 127.0.0.1 /meituan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.0101s ]
+NOTIC: [8] Undefined variable: url D:\xampp\htdocs\meituan\Index\Home\Controller\IndexController.class.php 第 49 行.
+SQL: SELECT `cname`,`cid` FROM `group_category` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.0112s ]
+SQL: SELECT `lname`,`lid` FROM `group_locality` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.buy AS buy,Goods_img.big_img AS big_img,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE ( price>0 ) ORDER BY Goods.begin_time desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 11 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: soncid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 191 行.
+NOTIC: [8] Undefined variable: sonlid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2016-12-30T10:30:42+08:00 ] 127.0.0.1 /meituan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.0118s ]
+NOTIC: [8] Undefined variable: url D:\xampp\htdocs\meituan\Index\Home\Controller\IndexController.class.php 第 49 行.
+SQL: SELECT `cname`,`cid` FROM `group_category` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.0077s ]
+SQL: SELECT `lname`,`lid` FROM `group_locality` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.buy AS buy,Goods_img.big_img AS big_img,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE ( price>0 ) ORDER BY Goods.begin_time desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 11 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: soncid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 191 行.
+NOTIC: [8] Undefined variable: sonlid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2016-12-30T10:30:50+08:00 ] 127.0.0.1 /meituan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.0111s ]
+NOTIC: [8] Undefined variable: url D:\xampp\htdocs\meituan\Index\Home\Controller\IndexController.class.php 第 49 行.
+SQL: SELECT `cname`,`cid` FROM `group_category` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.0082s ]
+SQL: SELECT `lname`,`lid` FROM `group_locality` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.buy AS buy,Goods_img.big_img AS big_img,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE ( price>0 ) ORDER BY Goods.begin_time desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 11 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: soncid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 191 行.
+NOTIC: [8] Undefined variable: sonlid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2016-12-30T10:30:53+08:00 ] 127.0.0.1 /meituan/index.php/Home/Index/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.0101s ]
+NOTIC: [8] Undefined variable: url D:\xampp\htdocs\meituan\Index\Home\Controller\IndexController.class.php 第 49 行.
+SQL: SELECT `cname`,`cid` FROM `group_category` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.0064s ]
+SQL: SELECT `lname`,`lid` FROM `group_locality` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.buy AS buy,Goods_img.big_img AS big_img,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE ( price>0 ) ORDER BY Goods.begin_time desc LIMIT 10,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 11 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: soncid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 191 行.
+NOTIC: [8] Undefined variable: sonlid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2016-12-30T10:30:54+08:00 ] 127.0.0.1 /meituan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.3548s ]
+NOTIC: [8] Undefined variable: url D:\xampp\htdocs\meituan\Index\Home\Controller\IndexController.class.php 第 49 行.
+SQL: SELECT `cname`,`cid` FROM `group_category` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.2950s ]
+SQL: SELECT `lname`,`lid` FROM `group_locality` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.buy AS buy,Goods_img.big_img AS big_img,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE ( price>0 ) ORDER BY Goods.begin_time desc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 11 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: soncid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 191 行.
+NOTIC: [8] Undefined variable: sonlid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001559s ]
+
+[ 2016-12-30T10:30:55+08:00 ] 127.0.0.1 /meituan/index.php/Home/detail/index/gid/24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.0065s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.begin_time AS begin_time,Goods.end_time AS end_time,Goods.buy AS buy,Goods_img.small_img AS small_img,Goods_img.big_img AS big_img,Goods_img.max_img AS max_img,Goods_detail.detail AS detail,Goods_detail.goods_server AS goods_server,Shop.shopname AS shopname,Shop.shopid AS shopid,Shop.shopaddress AS shopaddress,Shop.shoptel AS shoptel,Shop.coordinate AS coordinate,Locality.lname AS lname,Locality.lid AS lid,Category.cname AS cname,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE Goods.gid = '24' LIMIT 1   [ RunTime:0.0198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\24fc8d200ad2054c77c8ae05d79f0c26.php 第 11 行.
+NOTIC: [8] Undefined index: metroaddress D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\24fc8d200ad2054c77c8ae05d79f0c26.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-12-30T10:31:06+08:00 ] 127.0.0.1 /meituan/index.php/Home/detail/index/gid/24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.0059s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.begin_time AS begin_time,Goods.end_time AS end_time,Goods.buy AS buy,Goods_img.small_img AS small_img,Goods_img.big_img AS big_img,Goods_img.max_img AS max_img,Goods_detail.detail AS detail,Goods_detail.goods_server AS goods_server,Shop.shopname AS shopname,Shop.shopid AS shopid,Shop.shopaddress AS shopaddress,Shop.shoptel AS shoptel,Shop.coordinate AS coordinate,Locality.lname AS lname,Locality.lid AS lid,Category.cname AS cname,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE Goods.gid = '24' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\24fc8d200ad2054c77c8ae05d79f0c26.php 第 11 行.
+NOTIC: [8] Undefined index: metroaddress D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\24fc8d200ad2054c77c8ae05d79f0c26.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2016-12-30T10:31:09+08:00 ] 127.0.0.1 /meituan/index.php/Home/detail/index/gid/24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.0093s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.begin_time AS begin_time,Goods.end_time AS end_time,Goods.buy AS buy,Goods_img.small_img AS small_img,Goods_img.big_img AS big_img,Goods_img.max_img AS max_img,Goods_detail.detail AS detail,Goods_detail.goods_server AS goods_server,Shop.shopname AS shopname,Shop.shopid AS shopid,Shop.shopaddress AS shopaddress,Shop.shoptel AS shoptel,Shop.coordinate AS coordinate,Locality.lname AS lname,Locality.lid AS lid,Category.cname AS cname,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE Goods.gid = '24' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\24fc8d200ad2054c77c8ae05d79f0c26.php 第 11 行.
+NOTIC: [8] Undefined index: metroaddress D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\24fc8d200ad2054c77c8ae05d79f0c26.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2016-12-30T10:31:16+08:00 ] 127.0.0.1 /meituan/index.php/Home/detail/index/gid/24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.1510s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.4743s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.1161s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.0100s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.begin_time AS begin_time,Goods.end_time AS end_time,Goods.buy AS buy,Goods_img.small_img AS small_img,Goods_img.big_img AS big_img,Goods_img.max_img AS max_img,Goods_detail.detail AS detail,Goods_detail.goods_server AS goods_server,Shop.shopname AS shopname,Shop.shopid AS shopid,Shop.shopaddress AS shopaddress,Shop.shoptel AS shoptel,Shop.coordinate AS coordinate,Locality.lname AS lname,Locality.lid AS lid,Category.cname AS cname,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE Goods.gid = '24' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\24fc8d200ad2054c77c8ae05d79f0c26.php 第 11 行.
+NOTIC: [8] Undefined index: metroaddress D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\24fc8d200ad2054c77c8ae05d79f0c26.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2016-12-30T10:31:44+08:00 ] 127.0.0.1 /meituan/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.0126s ]
+NOTIC: [8] Undefined variable: url D:\xampp\htdocs\meituan\Index\Home\Controller\IndexController.class.php 第 49 行.
+SQL: SELECT `cname`,`cid` FROM `group_category` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.0084s ]
+SQL: SELECT `lname`,`lid` FROM `group_locality` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.buy AS buy,Goods_img.big_img AS big_img,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE ( price>0 ) ORDER BY Goods.begin_time desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 11 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: soncid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 191 行.
+NOTIC: [8] Undefined variable: sonlid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2016-12-30T10:31:45+08:00 ] 127.0.0.1 /meituan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `group_category` [ RunTime:0.0859s ]
+NOTIC: [8] Undefined variable: url D:\xampp\htdocs\meituan\Index\Home\Controller\IndexController.class.php 第 49 行.
+SQL: SELECT `cname`,`cid` FROM `group_category` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `group_locality` [ RunTime:0.1564s ]
+SQL: SELECT `lname`,`lid` FROM `group_locality` WHERE `pid` = 0 AND `display` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `group_goods` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `group_goods_img` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `group_goods_detail` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `group_shop` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT Goods.gid AS gid,Goods.main_title AS main_title,Goods.sub_title AS sub_title,Goods.price AS price,Goods.old_price AS old_price,Goods.buy AS buy,Goods_img.big_img AS big_img,Category.cid AS cid FROM group_goods Goods LEFT JOIN group_goods_img Goods_img ON Goods.gid=Goods_img.goods_id LEFT JOIN group_goods_detail Goods_detail ON Goods.gid=Goods_detail.goods_id LEFT JOIN group_shop Shop ON Goods.shopid=Shop.shopid LEFT JOIN group_locality Locality ON Goods.lid=Locality.lid LEFT JOIN group_category Category ON Goods.cid=Category.cid WHERE ( price>0 ) ORDER BY Goods.begin_time desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: webInfo D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 11 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: v D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 175 行.
+NOTIC: [8] Undefined variable: soncid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 191 行.
+NOTIC: [8] Undefined variable: sonlid D:\xampp\htdocs\meituan\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
